@@ -9,14 +9,14 @@ About the project:
     It is very early in development and I don't suggest that anyone use it in its current state. - Reread the disclaimer.
 
 How it works:
-    The bot logs into robinhood with account details provided in settings.py.
-    Bot gets historicals from monthly average. Gets hourly average every 15 seconds.
-        Compares the two values and assigns a weight.
-            Below 1.0 is seen as a 'good' price.
-        If hourly weight and monthly weight together are < 2:
-            A limit buy will be placed.
-        If limit sell goes above the purchase price:
-            A limit sell is immediately placed.
+    - The bot logs into robinhood with account details provided in settings.py.
+    - Bot gets historicals from monthly average. Gets hourly average every 15 seconds.
+        - Compares the two values and assigns a weight.
+            - Below 1.0 is seen as a 'good' price.
+        - If hourly weight and monthly weight together are < 2:
+            - A limit buy will be placed.
+        - If limit sell goes above the purchase price:
+            - A limit sell is immediately placed.
 
 Requirements:
     - Python 3.11
